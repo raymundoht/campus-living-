@@ -35,7 +35,7 @@ export default function Navbar() {
         <div className="container navbar__inner">
           {/* Logo */}
           <a href="#" className="navbar__logo">
-            <img src="/images/logo campus living.png" alt="Campus Living" style={{ height: '40px' }} />
+            <img src="./images/logo campus living.png" alt="Campus Living" style={{ height: '40px' }} />
           </a>
 
           {/* Desktop navigation links */}

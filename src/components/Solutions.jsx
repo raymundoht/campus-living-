@@ -24,7 +24,7 @@ export default function Solutions() {
         <div className="solutions-grid">
           {/* Residential */}
           <div className="solution-card reveal stagger-1">
-            <img src="/images/residential.png" alt="Modern modular residential building" className="solution-card__image" loading="lazy" />
+            <img src="./images/residential.png" alt="Modern modular residential building" className="solution-card__image" loading="lazy" />
             <div className="solution-card__overlay">
               <span className="solution-card__tag">Residential</span>
               <h3 className="solution-card__title">Modern Living</h3>
@@ -42,7 +42,7 @@ export default function Solutions() {
 
           {/* Commercial */}
           <div className="solution-card reveal stagger-2">
-            <img src="/images/commercial.png" alt="Modern modular commercial building" className="solution-card__image" loading="lazy" />
+            <img src="./images/commercial.png" alt="Modern modular commercial building" className="solution-card__image" loading="lazy" />
             <div className="solution-card__overlay">
               <span className="solution-card__tag">Commercial</span>
               <h3 className="solution-card__title">Office &amp; Retail</h3>
@@ -60,7 +60,7 @@ export default function Solutions() {
 
           {/* Healthcare */}
           <div className="solution-card reveal stagger-3">
-            <img src="/images/healthcare.png" alt="Modern modular healthcare facility" className="solution-card__image" loading="lazy" />
+            <img src="./images/healthcare.png" alt="Modern modular healthcare facility" className="solution-card__image" loading="lazy" />
             <div className="solution-card__overlay">
               <span className="solution-card__tag">Healthcare</span>
               <h3 className="solution-card__title">Medical Facilities</h3>

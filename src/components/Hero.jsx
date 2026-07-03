@@ -14,7 +14,7 @@ export default function Hero() {
     <section className="hero" id="hero">
       {/* Background image — parallax controlled via page.js scroll handler */}
       <div className="hero__bg">
-        <img src="/images/hero.png" alt="Modern modular building" loading="eager" />
+        <img src="./images/hero.png" alt="Modern modular building" loading="eager" />
       </div>
 
       <div className="container">
