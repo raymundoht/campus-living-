@@ -1,0 +1,250 @@
+/* ============================================
+   BETSY MODULAR — Additional Styles for React
+   ============================================ */
+
+/* ---------- Project Card Overlay Hover ---------- */
+/* Replaces the original JavaScript-based hover.
+   In React, we use CSS :hover instead of JS event listeners. */
+.project-card:hover .project-card__overlay {
+  opacity: 1;
+}
+
+
+/* ============================================
+   FILTER TOGGLES
+   ============================================ */
+.filters-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.filters-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+}
+
+.filter-toggles {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.filter-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 10px 20px;
+  font-size: var(--font-sm);
+  font-weight: 500;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--duration-base) var(--ease-out);
+  font-family: var(--font-family);
+}
+
+.filter-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.filter-toggle.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.filter-toggle__check {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1.5px solid currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--duration-base) var(--ease-out);
+  flex-shrink: 0;
+}
+
+.filter-toggle.active .filter-toggle__check {
+  background: white;
+  border-color: white;
+}
+
+.filter-toggle.active .filter-toggle__check svg {
+  stroke: var(--accent);
+}
+
+.filter-reset {
+  padding: 10px 20px;
+  font-size: var(--font-sm);
+  font-weight: 500;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--duration-base) var(--ease-out);
+  font-family: var(--font-family);
+  margin-left: auto;
+}
+
+.filter-reset:hover {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+
+/* ============================================
+   PROPERTY CARD BADGES
+   ============================================ */
+.property-badges {
+  position: absolute;
+  top: var(--space-2);
+  left: var(--space-2);
+  display: flex;
+  gap: 6px;
+  z-index: 3;
+}
+
+.property-badge {
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.property-badge--available {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22C55E;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.property-badge--unavailable {
+  background: rgba(239, 68, 68, 0.2);
+  color: #EF4444;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.property-badge--featured {
+  background: rgba(255, 158, 0, 0.2);
+  color: var(--accent);
+  border: 1px solid rgba(255, 158, 0, 0.3);
+}
+
+
+/* ============================================
+   PROPERTY CARD DETAILS
+   ============================================ */
+.property-price {
+  font-size: var(--font-lg);
+  font-weight: 700;
+  color: var(--accent);
+  margin-top: 4px;
+}
+
+.property-details {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: 6px;
+}
+
+.property-detail {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--font-xs);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.property-detail svg {
+  width: 14px;
+  height: 14px;
+}
+
+
+/* ============================================
+   CARD ENTER ANIMATION
+   ============================================ */
+@keyframes cardEnter {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* ============================================
+   EMPTY STATE
+   ============================================ */
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: var(--space-10) var(--space-4);
+}
+
+.no-results__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-3);
+  color: var(--text-light);
+}
+
+.no-results__text {
+  font-size: var(--font-lg);
+  color: var(--text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.no-results__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 12px 28px;
+  font-size: var(--font-sm);
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  background: var(--accent);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all var(--duration-base) var(--ease-out);
+  font-family: var(--font-family);
+}
+
+.no-results__btn:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-accent);
+}
+
+
+/* ============================================
+   RESPONSIVE ADDITIONS
+   ============================================ */
+@media (max-width: 640px) {
+  .filter-toggles {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-reset {
+    margin-left: 0;
+  }
+}

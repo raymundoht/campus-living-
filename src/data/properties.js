@@ -1,0 +1,120 @@
+/**
+ * Properties Data Array
+ * =====================
+ * Single source of truth for all property listings.
+ * This array simulates a database response and is used
+ * to dynamically render property cards via .map().
+ *
+ * Each object contains all required fields per the assignment spec:
+ * id, title, location, price, bedrooms, bathrooms, squareMeters,
+ * image, available, featured — plus a 'category' field for
+ * the existing category filter functionality.
+ */
+const properties = [
+  {
+    id: 1,
+    title: "The Meridian Residences",
+    location: "Austin, Texas",
+    price: "$425,000",
+    bedrooms: 3,
+    bathrooms: 2,
+    squareMeters: 120,
+    image: "/images/residential.png",
+    category: "residential",
+    available: true,
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "Vertex Office Tower",
+    location: "Denver, Colorado",
+    price: "$2,800,000",
+    bedrooms: 0,
+    bathrooms: 4,
+    squareMeters: 850,
+    image: "/images/commercial.png",
+    category: "commercial",
+    available: true,
+    featured: false,
+  },
+  {
+    id: 3,
+    title: "Orchard Medical Center",
+    location: "Portland, Oregon",
+    price: "$5,200,000",
+    bedrooms: 0,
+    bathrooms: 8,
+    squareMeters: 2400,
+    image: "/images/healthcare.png",
+    category: "healthcare",
+    available: false,
+    featured: true,
+  },
+  {
+    id: 4,
+    title: "Greenfield Academy",
+    location: "Nashville, Tennessee",
+    price: "$3,100,000",
+    bedrooms: 0,
+    bathrooms: 12,
+    squareMeters: 1800,
+    image: "/images/education.png",
+    category: "education",
+    available: true,
+    featured: false,
+  },
+  {
+    id: 5,
+    title: "Aurora Lodge & Spa",
+    location: "Aspen, Colorado",
+    price: "$8,500,000",
+    bedrooms: 24,
+    bathrooms: 28,
+    squareMeters: 3200,
+    image: "/images/hospitality.png",
+    category: "hospitality",
+    available: true,
+    featured: true,
+  },
+  {
+    id: 6,
+    title: "Skyline Lofts",
+    location: "Seattle, Washington",
+    price: "$650,000",
+    bedrooms: 2,
+    bathrooms: 2,
+    squareMeters: 95,
+    image: "/images/hero.png",
+    category: "residential",
+    available: false,
+    featured: false,
+  },
+  {
+    id: 7,
+    title: "Harbor Point Complex",
+    location: "San Francisco, California",
+    price: "$4,200,000",
+    bedrooms: 0,
+    bathrooms: 6,
+    squareMeters: 1200,
+    image: "/images/commercial.png",
+    category: "commercial",
+    available: true,
+    featured: true,
+  },
+  {
+    id: 8,
+    title: "Westbrook Medical Pavilion",
+    location: "Chicago, Illinois",
+    price: "$6,800,000",
+    bedrooms: 0,
+    bathrooms: 10,
+    squareMeters: 2800,
+    image: "/images/healthcare.png",
+    category: "healthcare",
+    available: true,
+    featured: false,
+  },
+];
+
+export default properties;
